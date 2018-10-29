@@ -1,0 +1,51 @@
+#bg { position: fixed; top: 0; left: 0; }
+
+.bgwidth { width: 100%; }
+
+.bgheight { height: 100%; }
+
+.pad{
+  margin-top: 72px;
+}
+.aligned{
+  text-align: center;
+}
+
+form{
+  margin-top: 16px;
+}
+body {
+  background: url(bckgrnd.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.button {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button2 {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 12px;
+
+}
+
+.button2:hover {
+    background-color: #228B22;
+    color: white;
+    border-radius: 50%;
+}

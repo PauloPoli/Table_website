@@ -1,0 +1,32 @@
+<html>
+ <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="addstyle.css">
+</head>
+<body>
+  <form>
+  Title: <input type="text" id="tlt" required><br>
+  UserID: <input type="number" id="usrid" required><br>
+  Body: <textarea type="textarea" rows="5" id="bd" required></textarea><br>
+  </form>
+  <div class="btn-box">
+  <button class="btn btn-submit" type="submit">submit<span class="emoji">&#x1F609;</span></button>
+</div>
+
+<script>
+
+    $("button").click(function(){
+        $.post("https://jsonplaceholder.typicode.com/posts",
+        {
+            "title" : $('#tlt').val(),
+            "userId" : $('#usrid').val(),
+            "body" : $('#bd').val()
+        },
+        function(data, status){
+            alert("Data: " + data.title + " " + data.userId + " " + data.body + "\nStatus: " + status);
+        });
+    });
+
+</script>
+</body>
+</html>
